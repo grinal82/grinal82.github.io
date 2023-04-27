@@ -525,7 +525,6 @@ $color-orange: #F28B64
     .main-section
         min-height: 525px
     .nav-menu
-        // display: none
         position: fixed
         top: 0
         right: -100%
@@ -648,6 +647,8 @@ $color-orange: #F28B64
 @media ( max-width: 575px)
     .container
         width: 100%
+    .nav-menu
+        width: 40%
     .main-section
         &__content-container
             flex-direction: column
@@ -660,7 +661,8 @@ $color-orange: #F28B64
             right: 15px
     .right-wrapper
         position: relative
-        margin: auto
+        margin: 5px 5px
+        right: 0
         display: flex
         flex-direction: column
         align-items: center
@@ -680,8 +682,6 @@ $color-orange: #F28B64
     .buttons
         &__main-btn
             margin: auto
-        &:last-child
-            margin-top: 0
     .left-wrapper
         img
             max-width: 380px
@@ -729,6 +729,8 @@ $color-orange: #F28B64
         &__right-wrapper
             max-width: 300px
             padding-left: 0
+            display: flex
+            flex-direction: column
     .footer
         &__img
             width: 400px
